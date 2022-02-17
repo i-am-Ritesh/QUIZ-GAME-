@@ -1,0 +1,43 @@
+print("WELCOME TO THIS QUIZ GAME!!!✨")
+
+player=input("Do you want to take this challenge? \n")
+
+if player!="yes".lower():
+    print(" Be prepared next time")
+    quit()
+
+score=0
+
+print("QUESTION 1")
+question=input("Who is the first president of India? \n").lower()
+
+if question=="dr rajendra prashad":
+    score +=1
+
+print("QUESTION 2")
+question=input("Statue Of Equality is made in the owner of? \n").lower()
+
+if question=="ramanujacharya":
+    score +=1
+
+print("QUESTION 3")
+question=input("Kaho village is located in which state? \n").lower()
+
+if question=="arunachal pradesh":
+    score +=1
+
+print("QUESTION 4")
+question=input("Total number of president elected so far in USA are? \n").lower()
+
+if question=="46":
+    score +=1
+
+print("QUESTION 5")
+question=input("Largest lake in india? \n").lower()
+
+if question=="vembanad lake":
+    score +=1            
+
+
+print(f"Your total score is = {score}")
+print(f"Your wining % is = {(score/5)*100}%")
